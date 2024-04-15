@@ -18,7 +18,7 @@ public class LinearSearch {
     static int LinearSearch(int[]arr,int Target){
         //if the lenth is empty
         if (arr.length==0){
-            return -1;
+            return Integer.MAX_VALUE;
         }
         // travel and check index by index
         for (int index =0 ; index <arr.length; index++){
@@ -29,7 +29,7 @@ public class LinearSearch {
 
         }
         // all travel is done but element is not present in array
-        return -1;
+        return Integer.MAX_VALUE;
 
     }
     static boolean LinearSearch1(int[]arr,int Target){
