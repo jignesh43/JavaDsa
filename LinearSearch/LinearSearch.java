@@ -1,3 +1,5 @@
+package LinearSearch;
+
 public class LinearSearch {
     public static void main(String [] arg){
         System.out.println("LinearSearch and return value is index");

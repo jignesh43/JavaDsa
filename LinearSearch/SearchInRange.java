@@ -1,17 +1,15 @@
-import java.lang.annotation.Target;
-import java.sql.Array;
-import java.util.Arrays;
+package LinearSearch;
 
-public class StringLinearSearch {
+public class SearchInRange {
     public static void main(String[] args) {
         String name = "Hacker";
-        char Target ='i';
-        boolean v = CharSearchInString(name,Target);
+        char Target ='c';
+        int t=2;
+        int x=4;
+        boolean v = SearchInRange(name,Target,t,x);
         System.out.println(v);
-        System.out.println(Arrays.toString(name.toCharArray()));
-
     }
-    static boolean CharSearchInString(String name, char Target){
+    static boolean SearchInRange(String name, char Target ,int t ,int x){
         if (name.length()==0){
             return false;
         }
@@ -19,9 +17,9 @@ public class StringLinearSearch {
             if (name.charAt(i)==Target){
                 return true;
             }*/
-        for (char a : name.toCharArray()) {
+        for (int i =t ; i<x; i++) {
             // Compare each character with the target character
-            if (a == Target) {
+            if (name.charAt(i) == Target) {
                 return true;
             }
         }
@@ -31,3 +29,4 @@ public class StringLinearSearch {
 
     }
 }
+
