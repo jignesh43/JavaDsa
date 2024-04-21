@@ -36,7 +36,7 @@ static int maxvalue(int [][]arr){
         for (int[] i: arr){
             for (int j:i){
                 if(j<min){
-                    min=j; 
+                    min=j;
 
                 }
 
